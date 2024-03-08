@@ -85,10 +85,10 @@ class LocationManagerClient implements LocationClient, LocationListenerCompat {
           return LocationManager.PASSIVE_PROVIDER;
       } else if (enabledProviders.contains(LocationManager.FUSED_PROVIDER) && Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
           return LocationManager.FUSED_PROVIDER;
-      } else if (enabledProviders.contains(LocationManager.GPS_PROVIDER)) {
-          return LocationManager.GPS_PROVIDER;
       } else if (enabledProviders.contains(LocationManager.NETWORK_PROVIDER)) {
           return LocationManager.NETWORK_PROVIDER;
+      } else if (enabledProviders.contains(LocationManager.GPS_PROVIDER)) {
+          return LocationManager.GPS_PROVIDER;
       } else if (!enabledProviders.isEmpty()){
           return enabledProviders.get(0);
       } else {
