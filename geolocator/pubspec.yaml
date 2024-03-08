@@ -32,7 +32,10 @@ dependencies:
   geolocator_windows: ^0.2.2
   
   geolocator_android:
-    path: ../geolocator_android
+    git:
+      url: https://github.com/xuhao1101/flutter-geolocator.git
+      ref: main
+      path: geolocator_android/
 
 dev_dependencies:
   flutter_test:
